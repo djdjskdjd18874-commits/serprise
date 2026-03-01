@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import index from "./index.css";
+
 
 const DateCounter: React.FC = () => {
   // Start date (example: August 11, 2024)
