@@ -26,7 +26,7 @@ const Login: React.FC = () => {
    <div className="flex  justify-center   bg-gradient-to-r from-pink-200 via-pink-300 to-pink-400">
     
 
-    <h1 className="text-4xl font-bold text-pink-600 p-2">✨ Welcome My Rahomty 💖 ✨</h1>
+    <h1 className="text-4xl font-bold text-pink-600 p-2">✨ Welcome Rahomty 💖 ✨</h1>
    </div>
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-pink-200 via-pink-300 to-pink-400">
       

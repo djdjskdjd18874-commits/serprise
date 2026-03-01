@@ -17,3 +17,30 @@
 }
 
 
+.romantic-frame {
+  border: 8px solid #fff;                  /* إطار أبيض */
+  border-radius: 30px;                     /* زوايا دائرية */
+  padding: 40px;                           /* مسافة داخلية */
+  background: linear-gradient(135deg, #ff9a9e, #fecfef); /* خلفية وردية ناعمة */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* ظل خفيف */
+  position: relative;
+}
+
+/* زخرفة قلوب صغيرة في الزوايا */
+.romantic-frame::before,
+.romantic-frame::after {
+  content: "❤";
+  position: absolute;
+  font-size: 30px;
+  color: #ff4d6d;
+}
+
+.romantic-frame::before {
+  top: -20px;
+  left: -20px;
+}
+
+.romantic-frame::after {
+  bottom: -20px;
+  right: -20px;
+}
