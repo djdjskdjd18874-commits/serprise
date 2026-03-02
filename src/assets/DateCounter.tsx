@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 
 const DateCounter: React.FC = () => {
-  // Start date (example: August 11, 2024)
+  // تاريخ البداية (مثال: 11 أغسطس 2024)
   const startDate = new Date("2024-08-11T00:00:00");
 
   const [time, setTime] = useState({
@@ -38,20 +38,30 @@ const DateCounter: React.FC = () => {
   ];
 
   return (
-    <div className="p-8 text-center bg-gray-50  flex flex-col items-center justify-center">
-      <h2 className="text-2xl font-bold mb-6">
-       <span className=" text-black">The</span>  <span className=" text-pink-600">period</span>  <span className=" text-black">we’ve</span>  <span className=" text-pink-600"> been</span>  <span className=" text-black">The</span>  <span className=" text-pink-600  animate-pulse">together</span>  
+
+     
+
+    <div className=" flex flex-col items-center justify-center p-10">
+       
+      <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center">
+        <span className="text-black">The</span>{" "}
+        <span className="text-pink-600">period</span>{" "}
+        <span className="text-black">we’ve</span>{" "}
+        <span className="text-pink-600">been</span>{" "}
+        <span className="text-black">together</span>{" "}
+        <span className="text-pink-600 animate-pulse">💖</span>
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-4xl">
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-4xl">
         {boxes.map((box, index) => (
           <div
             key={index}
-            className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center justify-center transform transition duration-300 hover:scale-105"
+            className="bg-white shadow-2xl rounded-2xl p-8 flex flex-col items-center justify-center transform transition duration-500 hover:scale-110 hover:rotate-1"
           >
-            <span className="text-4xl font-extrabold text-gray-900">
+            <span className="text-5xl font-extrabold text-pink-600 drop-shadow-lg">
               {box.value}
             </span>
-            <span className="text-sm font-medium text-gray-600 mt-2">
+            <span className="text-lg font-semibold text-gray-700 mt-3 tracking-wide">
               {box.label}
             </span>
           </div>

@@ -1,21 +1,31 @@
 
 import DateCounter from "./assets/DateCounter";
+import Memoris from "./components/Memoris";
 import Song from "./components/Song";
 
 const Home : React.FC = () => {
   return (
     <>
-      <DateCounter />
+    
 
 
       <div className=" bg-pink-200">
-        <Song />
+         
+      <DateCounter />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Song />
+       
         <br />
         <br />
         <div className="">
+       
 
 
           <div className="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+           
             <img
               src="/photo/2.jpeg"
               alt="Card image"
@@ -292,7 +302,7 @@ const Home : React.FC = () => {
             </div>
           </div>
 
-
+           <Memoris />
 
           <div className="flex items-center justify-center min-h-screen bg-pink-200">
             <div className="romantic-frame">
