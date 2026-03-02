@@ -42,10 +42,12 @@ const MusicPlayer: React.FC = () => {
       </button>
     </div>
     <audio
-      ref={audioRef}
-      src="/song/WhatsApp Audio 2026-02-23 at 1.36.19 PM.mpeg"
-      loop
-    />
+  ref={audioRef}
+  src="pubic/song/whatsapp-audio.mpeg"
+
+  loop
+/>
+
   </div>
 </div>
 <br />
