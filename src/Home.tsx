@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+
 import DateCounter from "./assets/DateCounter";
 import Song from "./components/Song";
 
 const MusicPlayer: React.FC = () => {
-  const audioRef = useRef<HTMLAudioElement>(null);
+ 
 
   
 
