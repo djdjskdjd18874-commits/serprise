@@ -2,19 +2,10 @@
 import DateCounter from "./assets/DateCounter";
 import Song from "./components/Song";
 
-const MusicPlayer: React.FC = () => {
- 
-
-  
-
+const Home : React.FC = () => {
   return (
     <>
-
-
       <DateCounter />
-
-
-
 
 
       <div className=" bg-pink-200">
@@ -331,5 +322,5 @@ const MusicPlayer: React.FC = () => {
   );
 };
 
-export default MusicPlayer;
+export default Home ;
 
