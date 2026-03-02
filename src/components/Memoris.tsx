@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, EffectFade } from "swiper/modules";
+import {  Autoplay, EffectFade } from "swiper/modules";
+
 
 
 
@@ -37,7 +38,7 @@ export default function Memoris() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-pink-200 to-pink-300 py-8 px-4">
+    <div className="min-h-screen from-pink-100 via-pink-200 to-pink-300 py-8 px-4">
       <h2 className="text-center text-3xl font-extrabold text-pink-700 mb-6 drop-shadow-lg">
         💖 Memories 💖
       </h2>
