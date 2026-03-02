@@ -5,13 +5,7 @@ import Song from "./components/Song";
 const MusicPlayer: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const playMusic = () => {
-    audioRef.current?.play();
-  };
-
-  const pauseMusic = () => {
-    audioRef.current?.pause();
-  };
+  
 
   return (
     <>

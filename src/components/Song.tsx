@@ -34,7 +34,7 @@ const Song: React.FC = () => {
         </div>
         <audio
           ref={audioRef}
-          src="/public/song/Song.mpeg"
+          src="/song/Song.mpeg"
           loop
         />
       </div>
