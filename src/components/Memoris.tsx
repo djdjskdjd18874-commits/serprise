@@ -38,39 +38,42 @@ export default function Memoris() {
   ];
 
   return (
-    <div className="min-h-screen from-pink-100 via-pink-200 to-pink-300 py-8 px-4">
-      <h2 className="text-center text-3xl font-extrabold text-pink-700 mb-6 drop-shadow-lg">
-        💖 Memories 💖
-      </h2>
+   <div className="min-h-screen from-pink-100 via-pink-200 to-pink-300 py-8 px-4">
+  <h2 className="text-center text-3xl font-extrabold text-pink-700 mb-6 drop-shadow-lg">
+    💖 Memories 💖
+  </h2>
 
-      <Swiper
-  modules={[Autoplay, EffectFade]}
-  autoplay={{ delay: 3000, disableOnInteraction: false }}
-  loop={true}
-  effect="fade"
-  spaceBetween={30}
-  slidesPerView={1}
-  className="max-w-md mx-auto h-full rounded-3xl shadow-2xl"
->
-
-        {memories.map((memory, index) => (
-          <SwiperSlide key={index}>
-            <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition duration-500">
-              <img
-                src={memory.img}
-                alt="Memory"
-                className="w-full h-90 object-cover"
-              />
-              <div className="p-6 text-center h-40 flex flex-col justify-center">
-                <h3 className="text-xl font-bold text-pink-600 mb-3">
-                  💖 My Home 💖
-                </h3>
-                <p className="text-gray-700 italic">{memory.text}</p>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  );
+  <Swiper
+    modules={[Autoplay, EffectFade]}
+    autoplay={{
+      delay: 2000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true, // ✅ يتوقف عند الـ hover
+    }}
+    loop={true}
+    effect="fade"
+    spaceBetween={30}
+    slidesPerView={1}
+    className="max-w-md mx-auto h-full rounded-3xl shadow-2xl"
+  >
+    {memories.map((memory, index) => (
+      <SwiperSlide key={index}>
+        <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition duration-500">
+          <img
+            src={memory.img}
+            alt="Memory"
+            className="w-full h-90 object-cover"
+          />
+          <div className="p-6 text-center h-40 flex flex-col justify-center">
+            <h3 className="text-xl font-bold text-pink-600 mb-3">
+              💖 My Home 💖
+            </h3>
+            <p className="text-gray-700 italic">{memory.text}</p>
+          </div>
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
+    );
 }

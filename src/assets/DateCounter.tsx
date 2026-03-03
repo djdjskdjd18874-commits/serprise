@@ -44,12 +44,12 @@ const DateCounter: React.FC = () => {
     <div className=" flex flex-col items-center justify-center p-10">
        
       <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center">
-        <span className="text-black">The</span>{" "}
-        <span className="text-pink-600">period</span>{" "}
-        <span className="text-black">we’ve</span>{" "}
-        <span className="text-pink-600">been</span>{" "}
-        <span className="text-black">together</span>{" "}
-        <span className="text-pink-600 animate-pulse">💖</span>
+        <span className="text-pink-600">The</span>{" "}
+        <span className="text-black">period</span>{" "}
+        <span className="text-pink-600">we’ve</span>{" "}
+        <span className="text-black">been</span>{" "}
+        <span className="text-pink-600 animate-pulse">together</span>{" "}
+        <span className="text-pink-600 ">💖</span>
       </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-4xl">

@@ -2,6 +2,7 @@
 import DateCounter from "./assets/DateCounter";
 import Memoris from "./components/Memoris";
 import Song from "./components/Song";
+import Chats from "./components/Chats";
 
 const Home : React.FC = () => {
   return (
@@ -274,35 +275,12 @@ const Home : React.FC = () => {
 
           </div>
           <br />
-          <div className="p-6 bg-gray-50 min-h-screen">
-            <h2 className="text-2xl font-bold text-pink-600 text-center mb-6">
-              💖Memories💖
-            </h2>
-
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {["18.jpeg", "19.jpeg", "20.jpeg", "21.jpeg", "22.jpeg", "24.jpeg", "25.jpeg"].map((photo, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transform transition duration-300"
-                >
-                  <img
-                    src={`/photo/${photo}`}
-                    alt={`Home ${index + 1}`}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-4 text-center">
-                    <h3 className="text-lg font-bold text-pink-600 mb-2">💖 My Home 💖</h3>
-                    <p className="text-gray-700">
-
-                      بحب كل الميمريز معاكي واللحظات الحلوه اللي عشناها مع بعض يا كتكوتي بحبك اوي وبحب كل لحظه معاكي
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+         
 
            <Memoris />
+            <br/>
+            <br/>
+           <Chats />
 
           <div className="flex items-center justify-center min-h-screen bg-pink-200">
             <div className="romantic-frame">
