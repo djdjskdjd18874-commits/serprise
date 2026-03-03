@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function MemoriesSlider() {
   const photos = [
