@@ -59,6 +59,8 @@ export default function MemoriesSlider() {
         </div>
       )}
     </div>
+
+    
   );
 }
 

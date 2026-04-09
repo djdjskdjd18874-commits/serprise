@@ -3,6 +3,9 @@ import DateCounter from "./assets/DateCounter";
 import Memoris from "./components/Memoris";
 import Song from "./components/Song";
 import Chats from "./components/Chats";
+import VideoPlayer from "./components/VideoPlayer";
+
+
 
 const Home : React.FC = () => {
   return (
@@ -281,6 +284,9 @@ const Home : React.FC = () => {
             <br/>
             <br/>
            <Chats />
+            <div className="min-h-screen flex items-center justify-center bg-pink-200">
+      <VideoPlayer src="/video/vv.mp4" title="Our beautiful memories 💖💖" />
+    </div>
 
           <div className="flex items-center justify-center min-h-screen bg-pink-200">
             <div className="romantic-frame">
@@ -289,6 +295,11 @@ const Home : React.FC = () => {
               </p>
             </div>
           </div>
+
+         
+
+ 
+           
 
 
 

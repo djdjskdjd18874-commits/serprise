@@ -6,6 +6,8 @@ import DateCounter from "./assets/DateCounter";
 import "./index.css";
 
 
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +15,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/Home" element={<Home />} />
        <Route path="/DateCounter" element={<DateCounter />} />
+      
       </Routes>
     </BrowserRouter>
   );
