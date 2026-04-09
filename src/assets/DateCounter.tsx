@@ -42,6 +42,7 @@ const DateCounter: React.FC = () => {
      
 
     <div className=" flex flex-col items-center justify-center p-10">
+      
        
       <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center">
         <span className="text-pink-600">The</span>{" "}

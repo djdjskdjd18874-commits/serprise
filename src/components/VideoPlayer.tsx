@@ -7,8 +7,9 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, title }) => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-pink-100">
-  <div className="flex flex-col items-center p-6 rounded-lg shadow-lg">
+    <div className="min-h-screen flex items-center justify-center bg-pink-100"> 
+   
+    <div className="flex flex-col items-center p-6 rounded-lg shadow-lg">
     {title && <h2 className="text-2xl font-bold mb-4 text-gray-800">{title}</h2>}
     <video 
       className="rounded-lg shadow-md w-full max-w-2xl " 

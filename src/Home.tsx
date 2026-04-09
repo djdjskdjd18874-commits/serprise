@@ -8,8 +8,10 @@ import VideoPlayer from "./components/VideoPlayer";
 
 
 const Home : React.FC = () => {
+  
   return (
     <>
+    
     
 
 
@@ -25,6 +27,7 @@ const Home : React.FC = () => {
         <br />
         <br />
         <div className="">
+          
        
 
 
@@ -284,9 +287,21 @@ const Home : React.FC = () => {
             <br/>
             <br/>
            <Chats />
+            <div className="text-4xl font-bold text-pink-300 p-6 bg-black">
+  لو انا مش امان ليكي مكنتش هتشوفي توتري عليكي ولا هتشوفي خوفي عليكي 
+  وانا اكتر حد بيحافظ عليكي وعلي سمعتك متقلقيش يا بت 
+  كفايا عنيكي الحست بالامان معايا انا مبسوط بي دا ومش هضيعو 
+  ومتقلقيش من اي حاجه مني عشان انا بحبك وبحافظ عليكي 
+  عيب عليكي وانا مسامحك بس خدي بالك بردوا انا بتأثر بكلامك جامد 
+  والله ربنا يخليكي ليا يا كتكوتي شوفي الفديو يا بت انا بحبكككك
+</div>
+
             <div className="min-h-screen flex items-center justify-center bg-pink-200">
       <VideoPlayer src="/video/vv.mp4" title="Our beautiful memories 💖💖" />
+      
     </div>
+     
+
 
           <div className="flex items-center justify-center min-h-screen bg-pink-200">
             <div className="romantic-frame">
