@@ -35,6 +35,7 @@ export default function Memoris() {
       img: "/photo/25.jpeg",
       text: "اول هديه ليا من رحومتي وبجد بعشق محفظتي ولحد دلوقت متعلق بي البرفان ربنا يخليكي يا كتكوتي",
     },
+   
   ];
 
   return (

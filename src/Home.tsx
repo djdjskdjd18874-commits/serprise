@@ -4,35 +4,39 @@ import Memoris from "./components/Memoris";
 import Song from "./components/Song";
 import Chats from "./components/Chats";
 import VideoPlayer from "./components/VideoPlayer";
+import Photo from "./components/photo";
+import { useNavigate } from "react-router-dom";
 
 
 
-const Home : React.FC = () => {
-  
+
+const Home: React.FC = () => {
+   const navigate = useNavigate();
+
   return (
     <>
-    
-    
+
+
 
 
       <div className=" bg-pink-200">
-         
-      <DateCounter />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Song />
-       
+
+        <DateCounter />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Song />
+
         <br />
         <br />
         <div className="">
-          
-       
+
+
 
 
           <div className="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-           
+
             <img
               src="/photo/2.jpeg"
               alt="Card image"
@@ -281,26 +285,28 @@ const Home : React.FC = () => {
 
           </div>
           <br />
-         
 
-           <Memoris />
-            <br/>
-            <br/>
-           <Chats />
-            <div className="text-4xl font-bold text-pink-300 p-6 bg-black">
-  لو انا مش امان ليكي مكنتش هتشوفي توتري عليكي ولا هتشوفي خوفي عليكي 
-  وانا اكتر حد بيحافظ عليكي وعلي سمعتك متقلقيش يا بت 
-  كفايا عنيكي الحست بالامان معايا انا مبسوط بي دا ومش هضيعو 
-  ومتقلقيش من اي حاجه مني عشان انا بحبك وبحافظ عليكي 
-  عيب عليكي وانا مسامحك بس خدي بالك بردوا انا بتأثر بكلامك جامد 
-  والله ربنا يخليكي ليا يا كتكوتي شوفي الفديو يا بت انا بحبكككك
-</div>
 
-            <div className="min-h-screen flex items-center justify-center bg-pink-200">
-      <VideoPlayer src="/video/vv.mp4" title="Our beautiful memories 💖💖" />
-      
-    </div>
-     
+          <Memoris />
+          <br />
+          <br />
+          <Chats />
+
+
+          <div className="text-4xl font-bold text-pink-300 p-6 bg-black">
+            لو انا مش امان ليكي مكنتش هتشوفي توتري عليكي ولا هتشوفي خوفي عليكي
+            وانا اكتر حد بيحافظ عليكي وعلي سمعتك متقلقيش يا بت
+            كفايا عنيكي الحست بالامان معايا انا مبسوط بي دا ومش هضيعو
+            ومتقلقيش من اي حاجه مني عشان انا بحبك وبحافظ عليكي
+            عيب عليكي وانا مسامحك بس خدي بالك بردوا انا بتأثر بكلامك جامد
+            والله ربنا يخليكي ليا يا كتكوتي شوفي الفديو يا بت انا بحبكككك
+          </div>
+
+          <div className="min-h-screen flex items-center justify-center bg-pink-200">
+            <VideoPlayer src="/video/vv.mp4" title="Our beautiful memories 💖💖" />
+
+          </div>
+
 
 
           <div className="flex items-center justify-center min-h-screen bg-pink-200">
@@ -311,10 +317,67 @@ const Home : React.FC = () => {
             </div>
           </div>
 
-         
 
- 
-           
+
+
+
+
+          <div className="flex justify-center items-center my-12 p-4">
+            {/* 
+        القلب الخارجي المتوهج والمتحرك (تأثير النبض)
+      */}
+            <div className="relative animate-[pulse_2s_infinite_ease-in-out]">
+
+              {/* توهج خلف القلب (Glow Effect) */}
+              <div className="absolute -inset-4 bg-gradient-to-tr from-rose-500 to-pink-400 rounded-[50%] blur-xl opacity-40"></div>
+
+              {/* جسم القلب الرئيسي باستخدام SVG والتأثيرات */}
+              <div className="relative w-[340px] h-[340px] sm:w-[450px] sm:h-[450px] bg-gradient-to-b from-rose-500 via-pink-500 to-red-600 rounded-full shadow-2xl flex flex-col items-center justify-center p-6 text-center border-4 border-pink-200/50 before:content-[''] before:absolute before:w-full before:h-full before:bg-rose-500/20 before:rounded-full before:-z-10">
+
+                {/* تأثير الإضاءة العلوية في القلب */}
+                <div className="absolute top-4 inset-x-0 mx-auto w-3/4 h-1/3 bg-white/10 rounded-full blur-md"></div>
+
+                {/* محتوى الكلام داخل القلب */}
+                <div className="z-10 max-w-[280px] sm:max-w-[360px] text-white dir-rtl flex flex-col items-center justify-center">
+
+                  {/* عنوان صغير */}
+                  <h1 className="text-lg sm:text-2xl font-extrabold mb-2 text-rose-100 drop-shadow flex items-center gap-1">
+                    <span>سنتين مع بعض</span>
+                    <span className="text-xl">🥹❤️</span>
+                  </h1>
+
+                  {/* نص الرسالة متناسق داخل القلب */}
+                  <p className="text-xs sm:text-sm font-medium leading-relaxed sm:leading-loose text-pink-50 text-shadow drop-shadow-sm">
+                    انا مش مصدق بجد 🥹 سنتين مع بعض يا كتكوتي بجد بجد مبسوط فشخ
+                    ربنا يخليكي ليا وتفضلي دائما جمبي كدا والله بحبك اوي اوي اوي
+                    خلي بالك انا مش بحب ازعل منك ومش بحب تقولي نبعد خالص هااا
+                    انا مليش غيرك والله
+                    يارب نحقق كل حاجه مع بعض وافرحك ويبقي احلي فرح واحلي مكان بجد كدا وتبقي فخوره بي اليوم انا بحبك يا كتكوتي 🥹♥️♥️♥️♥️♥️
+                  </p>
+
+                  {/* أيقونة صغيرة بالأسفل */}
+                  <div className="mt-2 text-xs text-rose-200 font-semibold animate-bounce">
+                    بحبك يا رحومتي ✨
+                  </div>
+                  <br />
+                  <br />
+                  <br />
+                  
+
+                  <button   onClick={() => navigate("/photo")}
+                  className="mt-2 px-4 py-2 bg-rose-500 text-white text-sm font-semibold rounded-full shadow-lg hover:bg-rose-600 transition duration-300 animate-bounce">
+                    💖 ادخلي هنا 💖
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          );
+
+
+
 
 
 
@@ -336,5 +399,5 @@ const Home : React.FC = () => {
   );
 };
 
-export default Home ;
+export default Home;
 
