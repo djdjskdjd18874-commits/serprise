@@ -4,7 +4,7 @@ import Memoris from "./components/Memoris";
 import Song from "./components/Song";
 import Chats from "./components/Chats";
 import VideoPlayer from "./components/VideoPlayer";
-import Photo from "./components/photo";
+
 import { useNavigate } from "react-router-dom";
 
 
